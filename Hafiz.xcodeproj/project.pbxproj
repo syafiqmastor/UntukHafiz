@@ -13,6 +13,11 @@
 		F07FB27724274D3F007ADAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07FB27524274D3F007ADAED /* Main.storyboard */; };
 		F07FB27924274D49007ADAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07FB27824274D49007ADAED /* Assets.xcassets */; };
 		F07FB27C24274D49007ADAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07FB27A24274D49007ADAED /* LaunchScreen.storyboard */; };
+		F07FB28424274DF9007ADAED /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FB28324274DF9007ADAED /* ViewModel.swift */; };
+		F07FB28724274EAB007ADAED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FB28524274EAB007ADAED /* TableViewCell.swift */; };
+		F07FB28824274EAB007ADAED /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07FB28624274EAB007ADAED /* TableViewCell.xib */; };
+		F07FB28A24274FEE007ADAED /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FB28924274FEE007ADAED /* Form.swift */; };
+		F07FB28C24275075007ADAED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FB28B24275075007ADAED /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F07FB27824274D49007ADAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F07FB27B24274D49007ADAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F07FB27D24274D49007ADAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07FB28324274DF9007ADAED /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F07FB28524274EAB007ADAED /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F07FB28624274EAB007ADAED /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		F07FB28924274FEE007ADAED /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		F07FB28B24275075007ADAED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				F07FB26F24274D3F007ADAED /* AppDelegate.swift */,
 				F07FB27124274D3F007ADAED /* SceneDelegate.swift */,
 				F07FB27324274D3F007ADAED /* ViewController.swift */,
+				F07FB28B24275075007ADAED /* DetailViewController.swift */,
+				F07FB28324274DF9007ADAED /* ViewModel.swift */,
+				F07FB28924274FEE007ADAED /* Form.swift */,
+				F07FB28524274EAB007ADAED /* TableViewCell.swift */,
+				F07FB28624274EAB007ADAED /* TableViewCell.xib */,
 				F07FB27524274D3F007ADAED /* Main.storyboard */,
 				F07FB27824274D49007ADAED /* Assets.xcassets */,
 				F07FB27A24274D49007ADAED /* LaunchScreen.storyboard */,
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F07FB27C24274D49007ADAED /* LaunchScreen.storyboard in Resources */,
+				F07FB28824274EAB007ADAED /* TableViewCell.xib in Resources */,
 				F07FB27924274D49007ADAED /* Assets.xcassets in Resources */,
 				F07FB27724274D3F007ADAED /* Main.storyboard in Resources */,
 			);
@@ -138,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07FB28724274EAB007ADAED /* TableViewCell.swift in Sources */,
 				F07FB27424274D3F007ADAED /* ViewController.swift in Sources */,
 				F07FB27024274D3F007ADAED /* AppDelegate.swift in Sources */,
+				F07FB28424274DF9007ADAED /* ViewModel.swift in Sources */,
 				F07FB27224274D3F007ADAED /* SceneDelegate.swift in Sources */,
+				F07FB28A24274FEE007ADAED /* Form.swift in Sources */,
+				F07FB28C24275075007ADAED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
