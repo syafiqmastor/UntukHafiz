@@ -17,6 +17,12 @@ class ViewModel {
         var isConditionB : Bool = false
     }
     
+    enum State {
+        case start
+        case finish
+    }
+    
+    var state: ((State) -> Void)?
     
     private var requirement : Requirement?
     var formArray : [Form] = []
@@ -24,6 +30,7 @@ class ViewModel {
     
     init(requirement : Requirement) {
         self.requirement = requirement
+        self.state?(.start)
         callAPI()
     }
     
@@ -33,6 +40,8 @@ class ViewModel {
         if requirement.isConditionA {
             //buat something if needed
         }
+        
+        self.state?(.finish)
     }
     
    

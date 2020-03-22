@@ -18,11 +18,23 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         self.tableView.dataSource = self
+        bind()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.tableView.reloadData()
+    }
+    
+    private func bind() {
+        viewModel.state = { [weak self] state in
+            guard let self = self else { return }
+            switch state {
+            case .start:
+                print("start")
+            case .finish:
+                self.tableView.reloadData()
+            }
+        }
     }
 }
 
